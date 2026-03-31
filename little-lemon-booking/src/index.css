@@ -1,0 +1,18 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
