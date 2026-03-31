@@ -39,8 +39,9 @@ function App() {
       <h1>🍋 Little Lemon Booking</h1>
 
       <form onSubmit={handleSubmit} aria-label="Booking Form">
-        <label>Name:</label>
+        <label htmlFor="name">Name:</label>
         <input
+          id="name"
           type="text"
           value={formData.name}
           onChange={(e) =>
@@ -49,8 +50,9 @@ function App() {
         />
         {errors.name && <p className="error">{errors.name}</p>}
 
-        <label>Date:</label>
+        <label htmlFor="date">Date:</label>
         <input
+          id="date"
           type="date"
           value={formData.date}
           onChange={(e) =>
@@ -59,8 +61,9 @@ function App() {
         />
         {errors.date && <p className="error">{errors.date}</p>}
 
-        <label>Guests:</label>
+        <label htmlFor="guests">Guests:</label>
         <input
+          id="guests"
           type="number"
           value={formData.guests}
           onChange={(e) =>
